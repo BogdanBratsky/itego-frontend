@@ -50,8 +50,8 @@ body {
 
 #logo-img {
     user-select: none;
-    width: 78px;
-    height: 25px;
+    max-width: 78px;
+    max-height: 25px;
 }
 
 /* #logo-img:active {
@@ -101,7 +101,7 @@ body {
 }
 
 .main__space {
-    border: 1px solid #dfdfdf;
+    /* border: 1px solid #dfdfdf; */
     box-shadow: 0 0 10px #dfdfdf;
     width: 100%;
     padding: 30px 25px;
@@ -136,6 +136,13 @@ body {
     border-radius: 50px;
 }
 
+.main__cards-title {
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    margin: 12px 0;
+}
+
 .main__card-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -144,6 +151,9 @@ body {
 }
 
 .main__card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     cursor: default;
     /* background-color: white;
     border: 1px solid #dfdfdf; */
@@ -176,7 +186,7 @@ body {
 }
 
 .main__card-item-head {
-    /* text-align: center; */
+    text-align: center;
     font-size: 26px;
     margin-bottom: 20px;
 }
@@ -190,14 +200,15 @@ body {
 /* ---------- */
 
 .footer {
-    border-top: 1px solid #a5a5a5;
-    background-color: #313131;
+    border-top: 1px solid #dfdfdf;
+    box-shadow: 0 15px 40px -10px #eaeaea inset;
     color: gray;
 }
 
 .footer__nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
     width: 1170px;
     padding: 45px 0;
@@ -205,22 +216,31 @@ body {
 
 .footer__contacts {
     display: flex;
-    flex-direction: column;
+    align-items: center;
 } 
 
-.footer__contact {
-    color: gray;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
+.footer__col {
+    margin-right: 22px;
 }
 
-.footer__contact:not(:last-child) {
-    margin-bottom: 22px;
+.footer__contact {
+    background-color: #f0f2f4;
+    padding: 15px;
+    border-radius: 10px;
+    color: gray;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
 }
 
 .footer__contact img {
-    margin-right: 22px;
+    margin-right: 12px;
     width: 22px;
     height: 22px;
+}
+
+.footer__logo img {
+    max-width: 100px;
+    max-height: 100px;
 }
